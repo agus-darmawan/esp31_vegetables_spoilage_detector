@@ -61,12 +61,12 @@ int knnClassify(const std::vector<float> &sample);
 
 void initializeTrainingData()
 {
-  trainingData.push_back({{100, 200, 150, 300}, 0});
-  trainingData.push_back({{120, 180, 140, 280}, 0});
-  trainingData.push_back({{110, 190, 145, 290}, 0});
-  trainingData.push_back({{400, 600, 450, 800}, 1});
-  trainingData.push_back({{450, 650, 500, 850}, 1});
-  trainingData.push_back({{420, 630, 480, 820}, 1});
+  trainingData.push_back({{100, 200, 150, 300}, 0}); // Pisang segar
+  trainingData.push_back({{120, 180, 140, 280}, 0}); // Semangka segar
+  trainingData.push_back({{110, 190, 145, 290}, 0}); // Pepaya segar
+  trainingData.push_back({{400, 600, 450, 800}, 1}); // Pisang busuk
+  trainingData.push_back({{450, 650, 500, 850}, 1}); // semangka busuk
+  trainingData.push_back({{420, 630, 480, 820}, 1}); // pepaya busuk
 }
 
 std::vector<float> normalizeReadings(float mq3, float mq4, float mq8, float mq135)
